@@ -64,8 +64,9 @@ header {
 	padding-top: 0.5em;
 }
 
-.carouselExampleControls {
-	
+.carousel {
+	width: 100em;
+	margin: 0 auto;
 }
 
 .row {
@@ -107,16 +108,17 @@ footer a:hover {
 .facebook{
 	text-align: center;
 	display: inline-block;
+	float: right;
+	margin-right: auto;
 }
 
 .facebookAll {
-	float: center;
+	float: right;
 	position: relative;
 	display: inline-block;
 }
 
 .fbBox {
-	float: inherit;
 	visibility: hidden;
 	position: absolute;
 }
@@ -126,9 +128,9 @@ footer a:hover {
 }
 
 .copyrightText {
-	position: relative;
-	float: left;
+	margin-left: 1em;
 	display: inline-block;
+	float: left;
 }
 
 .nameTime {
@@ -148,5 +150,11 @@ footer a:hover {
 .logo-facebook {
 	width: 5em;
 	height: 5em;
+}
+
+.box {
+	float: left;
+	width: 33.33%;
+	padding: 50px;
 }
 
