@@ -12,9 +12,9 @@ body {
 }
 
 header {
-	background: url(../images/tree.jpg) no-repeat;
-	background-size: cover;
-	height: 20em;
+/*	background: url(../images/strawberry.jpg) no-repeat;*/
+/*	background-size: cover;*/
+/*	height: 26em;*/
 }
 
 .veriteLiens {
@@ -64,6 +64,10 @@ header {
 	padding-top: 0.5em;
 }
 
+.carouselExampleControls {
+	
+}
+
 .row {
 	border-bottom-style: solid;
 	border-right-style: solid;
@@ -71,6 +75,15 @@ header {
 	border-radius: 0.25em;
 	box-shadow: 5px 5px rgba(146, 149, 145,0.25);
 	margin: 2em;
+}
+
+.row a:visited {
+	color: black;
+}
+
+.row a {
+	color: black;
+	font-size: 0.9em;
 }
 
 footer {
