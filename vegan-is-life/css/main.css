@@ -47,6 +47,16 @@ header {
 	text-align: right !important;
 }
 
+.nav-link:after{
+	content: "|";
+	margin-left: 1em;
+	color: inherit;
+}
+
+.lastNav {
+	content: none;
+}
+
 .fbButton{
 	display: block;
 	margin-left: auto;
@@ -57,6 +67,8 @@ header {
 footer {
 	background: #3e3b38;
 	color: gray;
+	text-align: center;
+	height: 12em;
 }
 
 footer a {
@@ -69,29 +81,50 @@ footer a:hover {
 	text-decoration: none;
 }
 
-.facebook {
-	width: inherit;
-	height: inherit;
-	float: center;
-}
-
-.facebook .fbText {
+.facebook{
 	text-align: center;
-	display: block;
+	display: inline-block;
+}
+
+.facebookAll {
+	float: center;
+	position: relative;
+	display: inline-block;
+}
+
+.fbBox {
 	float: inherit;
+	visibility: hidden;
+	position: absolute;
 }
 
-.facebook .fbBox {		
+.facebookAll:hover .fbBox {
+	visibility: visible;
+}
+
+.copyrightText {
+	position: relative;
+	float: left;
+	display: inline-block;
+}
+
+.nameTime {
+	color: #c8cac8;
+	width: 300px;
+	display: none;
+	background-color: rgba(0,0,0,0.20);
+	border-radius: 0.2em;
+	/* Position the tooltip */
+	position: relative;
+	margin-left: 5em ;
+}
+
+.copyrightText:hover +.nameTime {
 	display: block;
-	float: right;
 }
 
-.bold {
-	font-weight: bold;
-}
 
 .logo-facebook {
-	margin-bottom: 2em;
 	width: 5em;
 	height: 5em;
 }
