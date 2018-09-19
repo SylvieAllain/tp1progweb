@@ -34,7 +34,8 @@
 <body>
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	 			<h1><a style="color:green;" class="navbar-brand" href="../index.html">isVegan.Life</a></h1>
+	 		<div class="veriteLiens"><a href="https://www.laveritesurlasante.com/"><img src="../favicon.png" alt="La Vérité sur la Santé"></a><span class="textVerite">La Vérité sur la Santé</span></div>
+			<h1><a class="navbar-brand" id="navTitle" href="index.html">isVegan.Life</a></h1>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -59,6 +60,7 @@
 						<a class="nav-link" href="contact.html">Contact</a>
 					</li>
 				</ul>
+				<iframe class="fbButton" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com/ LaVeriteSurLaSante/&amp;layout=button_count&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;" style="overflow:hidden;width:100px;height:40px;border:0;"></iframe>
 			</div>
 		</nav>
 	</header>
@@ -70,11 +72,23 @@
 	
 	<footer>
 		<div class="facebook">
-			<p><a href="https://www.facebook.com/Sant%C3%A9-Qu%C3%A9bec-2226874300882291">
-			<span class="bold">Suivez nous sur Facebook</span> <br> pour recevoir les dernières informations reliées à la santé
-			<img class="logo-facebook" src="../images/logo-facebook.png" alt="Facebook"></a></p>
+			<a href="https://www.facebook.com/Sant%C3%A9-Qu%C3%A9bec-2226874300882291">
+				<span class="bold">Suivez nous sur Facebook</span>
+			</a>
+			<div class="facebookAll">
+				<a href="https://www.facebook.com/Sant%C3%A9-Qu%C3%A9bec-2226874300882291">
+					<img class="logo-facebook" src="../images/logo-facebook.png" alt="Facebook">
+				</a>
+				<span class="fbBox">
+					<iframe style="width:310px;height:180px;overflow:hidden;border:0;" src="https://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com/LaVeriteSurLaSante/ &amp;layout=button_count&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;" ></iframe>
+				</span>
+			</div>
+			<p><br> pour recevoir les dernières informations reliées à la santé</p>
 		</div>
-		<p><span class="copyright">Thierry Légaré et Sylvie Allain</span><span class="dateTime">14/09/2018</span></p>
+		<div class="copyright">
+			<p class="copyrightText">copyright</p>
+			<span class="nameTime">Thierry Légaré et Sylvie Allain - 14/09/2018</span>
+		</div>
 	</footer>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125385531- 1"></script>
@@ -82,5 +96,4 @@
 	window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
 	gtag('config', 'UA-125385531-1'); </script>
 </body>
-
 </html>
