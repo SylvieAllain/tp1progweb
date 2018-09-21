@@ -6,7 +6,7 @@
 }
 
 body {
-	background-image: linear-gradient(45deg red blue);	
+	background-image: linear-gradient(45deg red blue);
 	background-size: cover;
 	font-family:'Palatino';
 }
@@ -34,7 +34,8 @@ body {
 #navTitle {
 	font-size: 1em;
 	font-family: 'Lobster', cursive;
-	color:rgb(89, 179, 0);
+	color: rgb(89, 179, 0);
+	text-shadow: -.05em -.05em .05em rgb(179, 255, 179) , .03em .03em .05em black;
 }
 
 .nav-item {
@@ -157,3 +158,21 @@ footer a:hover {
 	width: 90%;
 }
 
+.text_intro{
+	margin-top: 5em;
+	margin-bottom: 5em;
+	border-style: hidden solid solid hidden;
+	border-color: silver;
+	box-shadow : .05em 1em 2em rgb(89, 179, 0) ;
+	font-family: Arial;
+	font-style: italic;
+	text-align: justify;
+
+}
+
+#titre_intro{
+	font-family:Lobster;
+	margin-left: 40%;
+	margin-right: 40%;
+	font-style: normal;
+}
