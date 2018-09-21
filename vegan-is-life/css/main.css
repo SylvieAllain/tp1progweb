@@ -11,12 +11,6 @@ body {
 	font-family:'Palatino';
 }
 
-header {
-/*	background: url(../images/strawberry.jpg) no-repeat;*/
-/*	background-size: cover;*/
-/*	height: 26em;*/
-}
-
 .veriteLiens {
 	position: relative;
 	display: inline-block;
@@ -113,6 +107,7 @@ footer a:hover {
 }
 
 .facebookAll {
+	width: 5%;
 	float: right;
 	position: relative;
 	display: inline-block;
@@ -156,5 +151,9 @@ footer a:hover {
 	float: left;
 	width: 33.33%;
 	padding: 50px;
+}
+
+.facebookText {
+	width: 90%;
 }
 
