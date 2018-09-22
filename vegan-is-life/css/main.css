@@ -108,18 +108,18 @@ form {
 }
 
 footer {
-	background-color: #3e3b38!important;
-	color: gray!important;
+	background-color: #3e3b38;
+	color: gray;
 	text-align: center;
 }
 
 footer a {
-	color: gray!important;
+	color: gray;
 	text-align: center;
 }
 
 footer a:hover {
-	color: gray!important;
+	color: gray;
 	text-decoration: none;
 }
 
@@ -191,9 +191,6 @@ footer a:hover {
 	font-style: normal;
 	text-align: justify;
 	background-color: rgb(255, 255, 204);
-
-.text_intro p{
-	text-align: left;
 }
 
 #titre_intro{
@@ -217,5 +214,4 @@ font-size: 1.3em;
 text-decoration: underline;
 margin-left: 15%;
 margin-right: 10%;
-
 }
