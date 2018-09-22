@@ -9,6 +9,9 @@ body {
 	background-image: linear-gradient(45deg red blue);
 	background-size: cover;
 	font-family:'Palatino';
+	background: linear-gradient(to top, #66d9ff -15%, #ffffff 100%);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .veriteLiens {
@@ -35,7 +38,7 @@ body {
 	font-size: 1em;
 	font-family: 'Lobster', cursive;
 	color: rgb(89, 179, 0);
-	text-shadow: -.05em -.05em .05em rgb(179, 255, 179) , .03em .03em .05em black;
+	text-shadow: -.05em -.05em .05em white , .03em .03em .05em black;
 }
 
 .nav-item {
@@ -63,14 +66,26 @@ body {
 	width: 100em;
 	margin: 0 auto;
 }
-
-.row {
+.row-right{
 	border-bottom-style: solid;
 	border-right-style: solid;
 	border-color: rgb(146, 149, 145);
 	border-radius: 0.25em;
 	box-shadow: 5px 5px rgba(146, 149, 145,0.25);
 	margin: 2em;
+	padding: 2em;
+	background: linear-gradient(to bottom left, #ffffcc 37%, #ffff66 100%);
+}
+
+.row-left{
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-color: rgb(146, 149, 145);
+	border-radius: 0.25em;
+	box-shadow: -5px 5px rgba(146, 149, 145,0.25);
+	margin: 2em;
+	padding: 2em;
+	background: linear-gradient(to bottom right, #ffffcc 37%, #ffff66 100%);
 }
 
 .row a:visited {
@@ -82,21 +97,39 @@ body {
 	font-size: 0.9em;
 }
 
+.row-right img{
+	box-shadow: 5px 5px rgb(255, 204, 153);
+}
+
+.row-left img{
+	box-shadow: -5px 5px rgb(255, 204, 153);
+}
+
+/*formulaire contact*/
+form {
+	background-color: rgb(230, 230, 230);
+	margin-top: 2em;
+	margin-bottom: 2em;
+	padding: 1em;
+	border-style: solid;
+	border-color: black;
+	border-radius: 1em;
+}
 footer {
-	background: #3e3b38;
-	color: gray;
+	background-color: #3e3b38!important;
+	color: gray!important;
 	text-align: center;
 	height: 12em;
 	width: 100%;
 }
 
 footer a {
-	color: gray;
+	color: gray!important;
 	text-align: center;
 }
 
 footer a:hover {
-	color: gray;
+	color: gray!important;
 	text-decoration: none;
 }
 
@@ -161,18 +194,38 @@ footer a:hover {
 .text_intro{
 	margin-top: 5em;
 	margin-bottom: 5em;
+	padding: 2em;
 	border-style: hidden solid solid hidden;
 	border-color: silver;
-	box-shadow : .05em 1em 2em rgb(89, 179, 0) ;
+	border-radius: 2em;
+	box-shadow : 1em 1em 2em rgb(255, 255, 102) ;
 	font-family: Arial;
-	font-style: italic;
+	font-style: normal;
 	text-align: justify;
+	background-color: rgb(255, 255, 204);
 
 }
 
 #titre_intro{
 	font-family:Lobster;
+	font-style: normal;
 	margin-left: 40%;
 	margin-right: 40%;
-	font-style: normal;
+}
+
+#sous_titre_intro{
+	font-family:Lobster;
+	margin-left:25%;
+	margin-right: 40%;
+	font-style:italic;
+	margin-bottom: 2em;
+}
+
+#phrase_de_fin {
+font-weight: bold;
+font-size: 1.3em;
+text-decoration: underline;
+margin-left: 15%;
+margin-right: 10%;
+
 }

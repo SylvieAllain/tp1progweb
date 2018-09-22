@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-<!-- 
+<!--
 	Auteur(s):  Thierry Légaré et Sylvie Allain
 	Date:  2018
 	License Cégep Sainte-Foy
@@ -9,15 +9,15 @@
 	<meta charset="utf-8">
 	<meta keyword="vérité santé cégep">
 	<meta description="">
-	
+
 	<title>Contact - isVegan.Life - La vérité sur la santé Québec</title>
-	
+
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384- ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384- ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="../css/main.css">
-	
+
 	<!--Balise FaceBook OG-->
 	<meta property="og:locale" content="fr_FR" /> <meta property="og:type" content="article" />
 	<meta property="og:title" content="Titre de la page – Nom recherche – La vérité sur la santé Québec" />
@@ -33,7 +33,7 @@
 
 <body>
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgb(230, 230, 230);">
 	 		<div class="veriteLiens"><a href="https://www.laveritesurlasante.com/"><img src="../favicon.png" alt="La Vérité sur la Santé"></a><span class="textVerite">La Vérité sur la Santé</span></div>
 			<h1><a class="navbar-brand" id="navTitle" href="index.html">isVegan.Life</a></h1>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,7 +45,7 @@
 						<a class="nav-link" href="../index.html">Accueil <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="problematique.html">Problématiqe</a>
+						<a class="nav-link" href="problematique.html">Problématique</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="etudes.html">Études scientifique</a>
@@ -85,12 +85,46 @@
 			</a>
 		</div>
 	</header>
-		
-		
+
+
 	<div class="container">
-		
-	</div>	
-	
+		<form action="formulaire_verite.php" method="post">
+		<div class="form-group">
+			<label for="sujet"> Sélectionner le sujet du message </label>
+			<select name="sujet" class="form-control" id="sujet" required>
+				<option> Sujet... </option>
+				<option> Webmestre - Bogues et améliorations </option>
+				<option> Évenements - Planification </option>
+				<option> Conférences - Engager nos conférenciers </option>
+			</select>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-6">
+				<label for="prenom"> Prénom </label>
+				<input type="text" name="prenom" class="form-control" id="prenom" maxlength="60" required>
+			</div>
+			<div class="form-group col-6">
+				<label for="nom"> Nom </label>
+				<input type="text" name="prenom" class="form-control" id="nom" maxlength="60" required>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="courriel"> Votre message </label>
+			<textarea rows="5" name="courriel" class="form-control" id="courriel" placeholder="Tapez votre message ici." required></textarea>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-1 offset-5">
+			<button type="submit" class="btn btn-primary" > Envoyer </button>
+		</div>
+		<div class="form-group col-6">
+			<button type="reset" class="btn btn-secondary"> Effacer </button>
+		</div>
+	</div>
+
+		</form>
+
+	</div>
+
 	<footer>
 		<div class="facebook">
 			<a href="https://www.facebook.com/Sant%C3%A9-Qu%C3%A9bec-2226874300882291">
