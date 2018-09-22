@@ -41,22 +41,13 @@ body {
 	text-shadow: -.05em -.05em .05em white , .03em .03em .05em black;
 }
 
-.nav-item {
-	text-align: right !important;
-}
-
 .nav-link:after{
 	content: "|";
 	margin-left: 1em;
 	color: inherit;
 }
 
-.lastNav {
-	content: none;
-}
-
 .fbButton{
-	display: block;
 	margin-left: auto;
 	position: relative;
 	padding-top: 0.5em;
@@ -88,11 +79,11 @@ body {
 	background: linear-gradient(to bottom right, #ffffcc 37%, #ffff66 100%);
 }
 
-.row a:visited {
+.etudes-article a:visited {
 	color: black;
 }
 
-.row a {
+.etudes-article a {
 	color: black;
 	font-size: 0.9em;
 }
@@ -115,12 +106,11 @@ form {
 	border-color: black;
 	border-radius: 1em;
 }
+
 footer {
 	background-color: #3e3b38!important;
 	color: gray!important;
 	text-align: center;
-	height: 12em;
-	width: 100%;
 }
 
 footer a {
@@ -141,39 +131,46 @@ footer a:hover {
 }
 
 .facebookAll {
-	width: 5%;
-	float: right;
-	position: relative;
-	display: inline-block;
+/*	width: 5%;*/
+/*	float: right;*/
+/*	position: relative;*/
+/*	display: inline-block;*/
 }
 
 .fbBox {
-	visibility: hidden;
+/*	visibility: hidden;*/
+	display: none;
 	position: absolute;
+/*	position: relative;*/
 }
 
-.facebookAll:hover .fbBox {
+.facebookAll:hover +.fbBox {
 	visibility: visible;
+/*	display: block;*/
 }
 
 .copyrightText {
 	margin-left: 1em;
-	display: inline-block;
+/*	margin-bottom: 2em;*/
+/*	display: block;*/
 	float: left;
 }
 
 .nameTime {
+	visibility: hidden;
 	color: #c8cac8;
-	width: 300px;
-	display: none;
+/*	width: 300px;*/
+/*	display: none;*/
 	background-color: rgba(0,0,0,0.20);
 	border-radius: 0.2em;
 	position: relative;
-	margin-left: 5em ;
+	margin-left: 3em ;
 }
 
 .copyrightText:hover +.nameTime {
-	display: block;
+/*	display: block;*/
+	visibility: visible;
+
 }
 
 .logo-facebook {
@@ -181,15 +178,6 @@ footer a:hover {
 	height: 5em;
 }
 
-.box {
-	float: left;
-	width: 33.33%;
-	padding: 50px;
-}
-
-.facebookText {
-	width: 90%;
-}
 
 .text_intro{
 	margin-top: 5em;
@@ -204,6 +192,8 @@ footer a:hover {
 	text-align: justify;
 	background-color: rgb(255, 255, 204);
 
+.text_intro p{
+	text-align: left;
 }
 
 #titre_intro{
