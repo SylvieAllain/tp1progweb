@@ -144,28 +144,16 @@ footer a:hover {
 /*	display: block;*/
 }
 
-.copyrightText {
-	margin-left: 1em;
-/*	margin-bottom: 2em;*/
-/*	display: block;*/
-	float: left;
-}
-
 .nameTime {
 	visibility: hidden;
 	color: #c8cac8;
-/*	width: 300px;*/
-/*	display: none;*/
 	background-color: rgba(0,0,0,0.20);
 	border-radius: 0.2em;
-	position: relative;
-	margin-left: 3em ;
+/*	position: relative;*/
 }
 
 .copyrightText:hover +.nameTime {
-/*	display: block;*/
 	visibility: visible;
-
 }
 
 .logo-facebook {
@@ -175,38 +163,25 @@ footer a:hover {
 
 
 .text_intro{
-	margin-top: 5em;
-	margin-bottom: 5em;
-	padding: 2em;
 	border-style: hidden solid solid hidden;
 	border-color: silver;
 	border-radius: 2em;
 	box-shadow : 1em 1em 2em rgb(255, 255, 102) ;
 	font-family: Arial;
 	font-style: normal;
-	text-align: justify;
 	background-color: rgb(255, 255, 204);
 }
 
 #titre_intro{
 	font-family:Lobster;
 	font-style: normal;
-	margin-left: 40%;
-	margin-right: 40%;
 }
 
 #sous_titre_intro{
 	font-family:Lobster;
-	margin-left:25%;
-	margin-right: 40%;
-	font-style:italic;
 	margin-bottom: 2em;
 }
 
 #phrase_de_fin {
-font-weight: bold;
-font-size: 1.3em;
-text-decoration: underline;
-margin-left: 15%;
-margin-right: 10%;
+	text-decoration: underline;
 }
