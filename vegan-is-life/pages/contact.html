@@ -34,8 +34,12 @@
 <body>
 	<header class="mb-5">
 		<nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgb(230, 230, 230);">
-	 		<div class="veriteLiens"><a href="https://www.laveritesurlasante.com/"><img src="../favicon.png" alt="La Vérité sur la Santé"></a><span class="textVerite">La Vérité sur la Santé</span></div>
-			<h1><a class="navbar-brand" id="navTitle" href="index.html">isVegan.Life</a></h1>
+	 		<div class="veriteLiens">
+				<a href="https://www.laveritesurlasante.com/">
+				<img src="../favicon.png" alt="La Vérité sur la Santé"></a>
+				<span class="textVerite">La Vérité sur la Santé</span>
+			</div>
+			<a class="navbar-brand" id="navTitle" href="../index.html">isVegan.Life</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -48,13 +52,13 @@
 						<a class="nav-link" href="problematique.html">Problématique</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="etudes.html">Études scientifique</a>
+						<a class="nav-link" href="etudes-et-articles-scientifiques-vegan.html">Études scientifique</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="video.html">Vidéos reliés</a>
+						<a class="nav-link" href="video-vegan.html">Vidéos reliés</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="carriere.html">Carrière</a>
+						<a class="nav-link" href="carriere-et-benevolat.html">Carrière</a>
 					</li>
 					<li class="nav-item active">
 						<a class="nav-link" href="contact.html">Contact</a>
@@ -98,8 +102,9 @@
 			<div class="col-7">
 				<form action="formulaire_verite.php" method="post">
 					<div class="form-group">
-						<label for="sujet"> Sélectionner le sujet du message </label>
+						<label for="sujet"> Sélectionner le sujet du message *</label>
 						<select name="sujet" class="form-control" id="sujet" required>
+							<option disabled selected value> -- Choisir un sujet -- </option>
 							<option> Webmestre - Bogues et améliorations </option>
 							<option> Évenements - Planification </option>
 							<option> Conférences - Engager nos conférenciers </option>
@@ -107,17 +112,18 @@
 					</div>
 					<div class="form-row">
 						<div class="form-group col-6">
-							<label for="prenom"> Prénom </label>
+							<label for="prenom"> Prénom *</label>
 							<input type="text" name="prenom" class="form-control" id="prenom" maxlength="60" required>
 						</div>
 						<div class="form-group col-6">
-							<label for="nom"> Nom </label>
+							<label for="nom"> Nom *</label>
 							<input type="text" name="prenom" class="form-control" id="nom" maxlength="60" required>
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="courriel"> Votre message </label>
+						<label for="courriel"> Votre message *</label>
 						<textarea rows="5" name="courriel" class="form-control" id="courriel" placeholder="Tapez votre message ici." required></textarea>
+						<small> * Champs obligatoires.</small>
 					</div>
 					<div class="form-row">
 						<div class="form-group col-xl-1 offset-xl-5 col-md-2 offset-md-4">
@@ -129,7 +135,8 @@
 					</div>
 				</form>
 			</div>
-			<div class="col-4 text-center">
+			<div class="verticalLine mx-5 mb-5"></div>
+			<div class="col-3 text-justify">
 				<h3><u>Adresse</u></h3>
 				<h4>777 Avenue <br>Québec, QC AXA XAX</h4><br><br>
 				<h3><u>Heure d'ouverture</u></h3>
@@ -140,24 +147,28 @@
 		</div>
 	</div>
 	<br>
-	<footer class="container-fluid mt-5">
-			<div class="row">
-				<div class="col">
-					<a href="https://www.facebook.com/Sant%C3%A9-Qu%C3%A9bec-2226874300882291" class="font-weight-bold text-center">Suivez nous sur Facebook</a>
-					<br>
-					<p class="text-center">pour recevoir les dernières informations reliées à la santé</p>
-					
-					<a href="https://www.facebook.com/Sant%C3%A9-Qu%C3%A9bec-2226874300882291">
-						<img class="logo-facebook" src="../images/logo-facebook.png" alt="Facebook">
-					</a>
-					<span class="fbBox">
-						<iframe style="width:310px;height:180px;overflow:hidden;border:0;" src="https://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com/LaVeriteSurLaSante/ &amp;layout=button_count&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;" ></iframe>
-					</span>
-				</div>
+	
+	<footer class="container-fluid">
+		<div class="row pt-3">
+			<div class="col">
+				<a href="https://www.facebook.com/Sant%C3%A9-Qu%C3%A9bec-2226874300882291" class="font-weight-bold text-center">Suivez nous sur Facebook</a>
+				<br>
+				<p class="text-center">pour recevoir les dernières informations reliées à la santé</p>
+				
+				<a href="https://www.facebook.com/Sant%C3%A9-Qu%C3%A9bec-2226874300882291">
+					<img class="logo-facebook" src="../images/logo-facebook.png" alt="Facebook">
+				</a>
+				<span class="fbBox">
+					<iframe style="width:310px;height:180px;overflow:hidden;border:0;" src="https://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com/LaVeriteSurLaSante/ &amp;layout=button_count&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;" ></iframe>
+				</span>
 			</div>
-			<p class="copyrightText text-left ml-3">©</p>
-			<span class="nameTime">Thierry Légaré et Sylvie Allain - 14/09/2018</span>
-		</footer>
+		</div>
+		<div class="row">
+			<div class="col-4 text-left">
+				<span class="copyrightText">©</span><span class="nameTime text-left  ml-5">isVegan.Life - Thierry Légaré et Sylvie Allain - 14/09/2018</span>
+			</div>
+		</div>
+	</footer>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125385531- 1"></script>
 	<script>
