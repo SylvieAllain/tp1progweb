@@ -8,7 +8,7 @@
 body {
 	background-size: cover;
 	font-family:'Palatino';
-	background: linear-gradient(to top, #66d9ff -15%, #ffffff 100%);
+	background: linear-gradient(to top, #d7d7d7 -15%, #f2f2f2 100%);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -91,7 +91,7 @@ body {
 	box-shadow: -5px 5px rgb(255, 204, 153);
 }
 
-/*formulaire contact*/
+/*formulaire contact
 form {
 	background-color: rgb(230, 230, 230);
 	margin-top: 2em;
@@ -100,7 +100,7 @@ form {
 	border-style: solid;
 	border-color: black;
 	border-radius: 1em;
-}
+}*/
 
 footer {
 	background-color: #3e3b38;
