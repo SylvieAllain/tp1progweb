@@ -11,6 +11,7 @@ body {
 	background: linear-gradient(to top, #d7d7d7 -15%, #f2f2f2 100%);
 	background-size: cover;
 	background-repeat: no-repeat;
+	font-size: 1em;
 }
 
 nav {
@@ -98,18 +99,18 @@ nav {
 footer {
 	background-color: #3e3b38;
 	height: 17em;
-	color: #a9a7a6;
+	color: #D0D0D0;
 	text-align: center;
 	background-size: cover;
 }
 
 footer a {
-	color: #a9a7a6;
+	color: #D0D0D0;
 	text-align: center;
 }
 
 footer a:hover {
-	color: #a9a7a6;
+	color: #D0D0D0;
 	text-decoration: none;
 }
 
@@ -141,7 +142,7 @@ footer a:hover {
 
 .nameTime {
 	visibility: hidden;
-	color: #c8cac8;
+	color: #D0D0D0;
 	background-color: #3e3b38;
 	border-radius: 0.2em;
 /*	position: relative;*/
@@ -187,4 +188,8 @@ footer a:hover {
 
 .verticalLine{
 	border-right: 1px solid black;
+}
+
+.contactInfo{
+	font-size: 1.3em;
 }
