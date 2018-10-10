@@ -13,6 +13,10 @@ body {
 	background-repeat: no-repeat;
 }
 
+nav {
+	background-color:rgb(230, 230, 230);
+}
+
 .veriteLiens {
 	position: relative;
 	display: inline-block;
@@ -61,7 +65,6 @@ body {
 	margin: 2em;
 	padding: 2em;
 	background: radial-gradient(ellipse at center, #FFF 15%, #DDD 90%);
-/*	background-color: #DDDDDD;*/
 }
 
 .row-right{
@@ -72,10 +75,8 @@ body {
 	box-shadow: -5px 5px rgba(146, 149, 145,0.25);
 	margin: 2em;
 	padding: 2em;
-/*	background-color: #DDDDDD;*/
 	background: radial-gradient(ellipse at center, #FFF 15%, #DDD 90%);
 }
-/*linear-gradient(to bottom right, #FFF 37%, #DDD 100%);*/
 
 .etudes-article a:visited {
 	color: black;
@@ -94,21 +95,12 @@ body {
 	box-shadow: -5px 5px #DDD;
 }
 
-/*formulaire contact
-form {
-	background-color: rgb(230, 230, 230);
-	margin-top: 2em;
-	margin-bottom: 2em;
-	padding: 1em;
-	border-style: solid;
-	border-color: black;
-	border-radius: 1em;
-}*/
-
 footer {
 	background-color: #3e3b38;
+	height: 17em;
 	color: #a9a7a6;
 	text-align: center;
+	background-size: cover;
 }
 
 footer a {
@@ -121,31 +113,31 @@ footer a:hover {
 	text-decoration: none;
 }
 
-.facebook{
-	text-align: center;
-	display: inline-block;
-	float: right;
-	margin-right: auto;
-}
-
-.facebookAll {
-/*	width: 5%;*/
-/*	float: right;*/
-/*	position: relative;*/
-/*	display: inline-block;*/
-}
-
-.fbBox {
-/*	visibility: hidden;*/
-	display: none;
+.frameFB{
+/*	display: inline;*/
 	position: absolute;
-/*	position: relative;*/
 }
 
-.facebookAll:hover +.fbBox {
-	visibility: visible;
-/*	display: block;*/
+.fbImg {
+	position: relative;
+	display: inline-flex;
+/*	height:180px;*/
 }
+
+.fbPlugin {
+	display: inline-block;
+	visibility: hidden;
+	color: #c8cac8;
+	background-color: #3e3b38;
+	border-radius: 0.2em;
+	position: absolute;
+	z-index: 1;
+}
+
+.fbImg:hover .fbPlugin {
+	visibility: visible;
+}
+
 
 .nameTime {
 	visibility: hidden;
@@ -157,7 +149,6 @@ footer a:hover {
 
 .copyrightText:hover +.nameTime {
 	visibility: visible;
-	
 }
 
 .logo-facebook {
